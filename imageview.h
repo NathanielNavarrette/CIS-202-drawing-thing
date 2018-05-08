@@ -5,6 +5,7 @@
 #include <QGraphicsScene>
 #include <QGraphicsEllipseItem>
 #include <QMouseEvent>
+//include <
 
 class ImageView : public QGraphicsView
 {
@@ -23,5 +24,8 @@ class ImageView : public QGraphicsView
    private:
        QGraphicsScene * scene;
        QPointF last_position;
+       QPen getColorPen();
+       QBrush getColorBrush();
+       int count = 0;
 };
 #endif // IMAGEVIEW_H
